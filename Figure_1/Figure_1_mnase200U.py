@@ -17,7 +17,7 @@ o11 = np.zeros(Ns)
 for i in range(Ns):
     o11[i]=amin+i
 
-f1='/media/hungyo/edrive/hung_ens_laptop/hungyo_nucdyn/NucleoModel/lnZ_nondegen/yeastsc_lnZ/H4_Input_MNase_200U_Rep1/'
+f1='/yeastsc_lnZ/H4_Input_MNase_200U_Rep1/'
 f2='frag_91_147bp_gene.dat'
 fx=''.join((f1,f2))
 print('filename...',fx)
@@ -63,7 +63,7 @@ plt.legend(('All', 'Gene', 'Non-gene')) #200U
 plt.grid()
 
 
-data3=np.load('/media/hungyo/edrive/hung_ens_laptop/hungyo_nucdyn/NucleoModel/lnZ_nondegen/yeastsc_lnZ/H4_Input_MNase_200U_Rep1/pair_end/chrmap.npy')
+data3=np.load('/yeastsc_lnZ/H4_Input_MNase_200U_Rep1/pair_end/chrmap.npy')
 s=data3.shape
 print(s)
 s=data3.sum()
