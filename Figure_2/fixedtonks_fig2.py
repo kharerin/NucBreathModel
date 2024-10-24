@@ -5,10 +5,10 @@ import numpy as np
 import math
 import string
 
-
-fig, ax = plt.subplots(figsize=(9.2,3.2))
+fig, ax = plt.subplots(figsize=(9,3.2))
 #fig, ax = plt.subplots(constrained_layout=True)
 
+plt.clf()
 
 lmin=91
 lmax=147
@@ -20,10 +20,10 @@ ur = np.zeros(10000)
 l[0]=70; l[1]=80; l[2]=90; l[3]=100; l[4]=110; l[5]=120; l[6]=130; l[7]=140; l[8]=150; 
 cx='rbgycmpkk'
 print(cx[0])
-ax1=plt.subplot(1, 3, 1)
-ax1.text(-0.15, 1.05, string.ascii_uppercase[0], transform=ax1.transAxes, size=20, weight='bold')
+ax=plt.subplot(1, 3, 1)
+ax.text(-0.25, 1.07, string.ascii_uppercase[0], transform=ax.transAxes, size=20, weight='bold')
 plt.ylabel(r'Density ($\rho$)',fontsize=12)
-plt.xlabel('$\mu_r$',fontsize=12)
+plt.xlabel(r'$\mu_r$',fontsize=12)
 plt.xlim(-15, 15)
 plt.ylim(0,0.015)
 for j in range(9):
@@ -87,9 +87,9 @@ p = np.zeros(10000)
 o = np.zeros(10000)
 ur = np.zeros(10000)    
 ax1=plt.subplot(1, 3, 2)
-ax1.text(-0.15, 1.05, string.ascii_uppercase[1], transform=ax1.transAxes, size=20, weight='bold')
-plt.ylabel('Occupancy (O)',fontsize=12)
-plt.xlabel('$\mu_r$',fontsize=12)
+ax1.text(-0.25, 1.07, string.ascii_uppercase[1], transform=ax1.transAxes, size=20, weight='bold')
+plt.ylabel('Occupancy ($O$)',fontsize=12)
+plt.xlabel(r'$\mu_r$',fontsize=12)
 plt.xlim(-15, 15)
 plt.ylim(0,1)
 for j in range(9):
@@ -155,31 +155,31 @@ for i in range(7):
     for j in range(300):
         data1[j]=mu[j+k]
         data5[j]=pO1[j+k]
-        if pO1[j+k]>((1/(2*ls[i]))-0.0001) and pO1[j+k]<((1/(2*ls[i]))+0.0005) and ls[i]==25:
+        if pO1[j+k]>((0.31/ls[i])-0.0001) and pO1[j+k]<((0.31/ls[i])+0.0005) and ls[i]==25:
            print('mx,imx..............',i,mu[j+k],ls[i])
            muxx.append(mu[j+k])
            lsxx.append(ls[i])
-        if pO1[j+k]>((1/(2*ls[i]))-0.0001) and pO1[j+k]<((1/(2*ls[i]))+0.0001) and ls[i]==50:
+        if pO1[j+k]>((0.31/ls[i])-0.0001) and pO1[j+k]<((0.31/ls[i])+0.0001) and ls[i]==50:
            print('mx,imx..............',i,mu[j+k],ls[i])
            muxx.append(mu[j+k])
            lsxx.append(ls[i])
-        if pO1[j+k]>((1/(2*ls[i]))-0.0001) and pO1[j+k]<((1/(2*ls[i]))+0.0002) and ls[i]==75:
+        if pO1[j+k]>((0.31/ls[i])-0.0001) and pO1[j+k]<((0.31/ls[i])+0.0002) and ls[i]==75:
            print('mx,imx..............',i,mu[j+k],ls[i])
            muxx.append(mu[j+k])
            lsxx.append(ls[i])
-        if pO1[j+k]>((1/(2*ls[i]))-0.0001) and pO1[j+k]<((1/(2*ls[i]))+0.0001) and ls[i]==100:
+        if pO1[j+k]>((0.31/ls[i])-0.0001) and pO1[j+k]<((0.31/ls[i])+0.0001) and ls[i]==100:
            print('mx,imx..............',i,mu[j+k],ls[i])
            muxx.append(mu[j+k])
            lsxx.append(ls[i])
-        if pO1[j+k]>((1/(2*ls[i]))-0.00004) and pO1[j+k]<((1/(2*ls[i]))+0.00004) and ls[i]==125:
+        if pO1[j+k]>((0.31/ls[i])-0.00004) and pO1[j+k]<((0.31/ls[i])+0.00004) and ls[i]==125:
            print('mx,imx..............',i,mu[j+k],ls[i])
            muxx.append(mu[j+k])
            lsxx.append(ls[i])
-        if pO1[j+k]>((1/(2*ls[i]))-0.00004) and pO1[j+k]<((1/(2*ls[i]))+0.00004) and ls[i]==150:
+        if pO1[j+k]>((0.31/ls[i])-0.00004) and pO1[j+k]<((0.31/ls[i])+0.00004) and ls[i]==150:
            print('mx,imx..............',i,mu[j+k],ls[i])
            muxx.append(mu[j+k])
            lsxx.append(ls[i])
-        if pO1[j+k]>((1/(2*ls[i]))-0.00004) and pO1[j+k]<((1/(2*ls[i]))+0.00003) and ls[i]==175:
+        if pO1[j+k]>((0.31/ls[i])-0.00004) and pO1[j+k]<((0.31/ls[i])+0.00003) and ls[i]==175:
            print('mx,imx..............',i,mu[j+k],ls[i])
            muxx.append(mu[j+k])
            lsxx.append(ls[i])
@@ -222,31 +222,31 @@ for i in range(7):
     for j in range(300):
         data1[j]=mu[j+k]
         data5[j]=pO1[j+k]
-        if pO1[j+k]>((1/(2*(ls[i]+20)))-0.0001) and pO1[j+k]<((1/(2*(ls[i]+20)))+0.0005) and ls[i]==25:
+        if pO1[j+k]>((0.31/(ls[i]+20))-0.0001) and pO1[j+k]<((0.31/(ls[i]+20))+0.0005) and ls[i]==25:
            print('mx,imx..............',i,mu[j+k],ls[i])
            muxx1.append(mu[j+k])
            lsxx1.append(ls[i])
-        if pO1[j+k]>((1/(2*(ls[i]+20)))-0.0001) and pO1[j+k]<((1/(2*(ls[i]+20)))+0.0001) and ls[i]==50:
+        if pO1[j+k]>((0.31/(ls[i]+20))-0.0001) and pO1[j+k]<((0.31/(ls[i]+20))+0.0001) and ls[i]==50:
            print('mx,imx..............',i,mu[j+k],ls[i])
            muxx1.append(mu[j+k])
            lsxx1.append(ls[i])
-        if pO1[j+k]>((1/(2*(ls[i]+20)))-0.0001) and pO1[j+k]<((1/(2*(ls[i]+20)))+0.0001) and ls[i]==75:
+        if pO1[j+k]>((0.31/(ls[i]+20))-0.0001) and pO1[j+k]<((0.31/(ls[i]+20))+0.0001) and ls[i]==75:
            print('mx,imx..............',i,mu[j+k],ls[i])
            muxx1.append(mu[j+k])
            lsxx1.append(ls[i])
-        if pO1[j+k]>((1/(2*(ls[i]+20)))-0.0001) and pO1[j+k]<((1/(2*(ls[i]+20)))+0.0001) and ls[i]==100:
+        if pO1[j+k]>((0.31/(ls[i]+20))-0.0001) and pO1[j+k]<((0.31/(ls[i]+20))+0.0001) and ls[i]==100:
            print('mx,imx..............',i,mu[j+k],ls[i])
            muxx1.append(mu[j+k])
            lsxx1.append(ls[i])
-        if pO1[j+k]>((1/(2*(ls[i]+20)))-0.00004) and pO1[j+k]<((1/(2*(ls[i]+20)))+0.00004) and ls[i]==125:
+        if pO1[j+k]>((0.31/(ls[i]+20))-0.00004) and pO1[j+k]<((0.31/(ls[i]+20))+0.00004) and ls[i]==125:
            print('mx,imx..............',i,mu[j+k],ls[i])
            muxx1.append(mu[j+k])
            lsxx1.append(ls[i])
-        if pO1[j+k]>((1/(2*(ls[i]+20)))-0.00004) and pO1[j+k]<((1/(2*(ls[i]+20)))+0.00004) and ls[i]==150:
+        if pO1[j+k]>((0.31/(ls[i]+20))-0.00004) and pO1[j+k]<((0.31/(ls[i]+20))+0.00004) and ls[i]==150:
            print('mx,imx..............',i,mu[j+k],ls[i])
            muxx1.append(mu[j+k])
            lsxx1.append(ls[i])
-        if pO1[j+k]>((1/(2*(ls[i]+20)))-0.00004) and pO1[j+k]<((1/(2*(ls[i]+20)))+0.00003) and ls[i]==175:
+        if pO1[j+k]>((0.31/(ls[i]+20))-0.00004) and pO1[j+k]<((0.31/(ls[i]+20))+0.00003) and ls[i]==175:
            print('mx,imx..............',i,mu[j+k],ls[i])
            muxx1.append(mu[j+k])
            lsxx1.append(ls[i])
@@ -257,17 +257,17 @@ for i in range(7):
 
       
 ax1=plt.subplot(1, 3, 3)
-ax1.text(-0.15, 1.05, string.ascii_uppercase[2], transform=ax1.transAxes, size=20, weight='bold')
+ax1.text(-0.25, 1.07, string.ascii_uppercase[2], transform=ax1.transAxes, size=20, weight='bold')
 plt.ylabel(r'Critical chemical Pot. ($\mu_r$*)',fontsize=12)
 plt.xlabel('Wrapping length ($l$)',fontsize=12)
 plt.xlim(0, 200)
-plt.ylim(-5, 2)
+plt.ylim(-8, 2)
 l = np.zeros(20)
 mu = np.zeros(20)
 lk=0
 for i in range(20):
     l[i]=i*10+5
-    mu[i]=1+math.log(1/(l[i]+lk))
+    mu[i]=-0.34+math.log(1/(l[i]+lk))
     #print(p[i],p[i]*l[j])
 plt.plot(l, mu,c='k',label='$l_{k}=0$') #linestyle='dotted'
 plt.plot(lsxx, muxx, linestyle='', c = 'black',marker='o',ms=4) #linestyle='dotted'
@@ -277,10 +277,10 @@ mu = np.zeros(20)
 lk=20
 for i in range(20):
     l[i]=i*10+5
-    mu[i]=1+math.log(1/(l[i]+lk))
+    mu[i]=-0.34+math.log(1/(l[i]+lk))
     #print(p[i],p[i]*l[j])
 plt.plot(l, mu,c='grey',label='$l_{k}=20$') #linestyle='dotted'
-plt.legend(loc="upper right",fontsize=10,frameon=False)
+plt.legend(loc="upper right",fontsize=11,frameon=False)
 
 #plt.vlines(-2.65, 0, 1, linestyles ="dotted", colors ="k")
 
