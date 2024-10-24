@@ -50,7 +50,7 @@ lm=[]
 data1 = np.zeros( (9, 575) )
 data4 = np.zeros( (9, 575) )
 data5 = np.zeros( (9, 575) )
-f = open('/media/hungyo/edrive/hung_ens_laptop/hungyo_nucdyn/NucleoModel/lnZ_nondegen/mu_-21p6kt_E0d8p4/nieb2/kevin_fig_ver2/large_remod2/score_scanA1/density_fixedsize_vs_mu/den_mu_E0d.txt','r')
+f = open('/density_fixedsize_vs_mu/den_mu_E0d.txt','r')
 for row in f:
     row = row.split(' ')
     mu.append(float(row[0]))
@@ -130,7 +130,7 @@ lm=[]
 ms=[]
 data1 = np.zeros(300)
 data4 = np.zeros(300)
-f = open('/media/hungyo/edrive/hung_ens_laptop/hungyo_nucdyn/NucleoModel/lnZ_nondegen/mu_-21p6kt_E0d8p4/nieb2/kevin_fig_ver2/large_remod2/score_scanA1/density_fixedsize_vs_mu/critical_mu/den_mu_E0d.txt','r')
+f = open('/density_fixedsize_vs_mu/critical_mu/den_mu_E0d.txt','r')
 for row in f:
     row = row.split(' ')
     mu.append(float(row[0]))
@@ -149,7 +149,7 @@ mux=np.zeros(7)
 ls = np.zeros(7)
 ls[0]=25; ls[1]=50; ls[2]=75; ls[3]=100; ls[4]=125; ls[5]=150; ls[6]=175; 
 k=0  
-for i in range(7):
+for i in range(7): # collecting fit-points for the scatter plot
     data1 = np.zeros(300)
     data5 = np.zeros(300)
     for j in range(300):
@@ -197,7 +197,7 @@ lm=[]
 ms=[]
 data1 = np.zeros(300)
 data4 = np.zeros(300)
-f = open('/media/hungyo/edrive/hung_ens_laptop/hungyo_nucdyn/NucleoModel/lnZ_nondegen/mu_-21p6kt_E0d8p4/nieb2/kevin_fig_ver2/large_remod2/score_scanA1/density_fixedsize_vs_mu/critical_mu_lk_20/den_mu_E0d.txt','r')
+f = open('/density_fixedsize_vs_mu/critical_mu_lk_20/den_mu_E0d.txt','r')
 for row in f:
     row = row.split(' ')
     mu.append(float(row[0]))
@@ -216,7 +216,7 @@ mux=np.zeros(7)
 ls = np.zeros(7)
 ls[0]=25; ls[1]=50; ls[2]=75; ls[3]=100; ls[4]=125; ls[5]=150; ls[6]=175; 
 k=0  
-for i in range(7):
+for i in range(7): # collecting fit-points for the scatter plot
     data1 = np.zeros(300)
     data5 = np.zeros(300)
     for j in range(300):
