@@ -95,7 +95,7 @@ E11xO3=np.multiply(E01xO3,n)
 mu1y=[]
 E01y=[]
 pO1y=[]
-f = open('/media/hungyo/edrive/hung_ens_laptop/hungyo_nucdyn/NucleoModel/lnZ_nondegen/no_nieb_cedric/d1_mu_E0d.txt','r')
+f = open('/media/hungyo/edrive/hung_ens_laptop/hungyo_nucdyn/NucleoModel/lnZ_nondegen/no_nieb_cedric/d1_mu_E0d.txt','r') # theory
 for row in f:
     row = row.split(' ')
     mu1y.append(float(row[0]))
