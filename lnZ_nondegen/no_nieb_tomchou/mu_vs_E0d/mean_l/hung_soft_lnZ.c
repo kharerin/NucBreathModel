@@ -20,43 +20,12 @@ int main() {
         static double Eij[L1][Ns],gn[2000][Ns],Gn[2000],GN[2000],Gp[5][2];
         
         
-        
         f4=fopen("./d1_mu_E0d.txt", "w");
         if(f4==NULL) {
           printf("quit \n");
           exit(0);
         }
-        f6=fopen("./occ_0p7.txt", "w");
-        if(f6==NULL) {
-          printf("quit \n");
-          exit(0);
-        }
-        f7=fopen("./occ_0p75.txt", "w");
-        if(f7==NULL) {
-          printf("quit \n");
-          exit(0);
-        }
-        f8=fopen("./rms_0.txt", "w");
-        if(f8==NULL) {
-          printf("quit \n");
-          exit(0);
-        }
-        
-        f15=fopen("./occ_0p8.txt", "w");
-        if(f15==NULL) {
-          printf("quit \n");
-          exit(0);
-        }
-        f16=fopen("./occ_0p85.txt", "w");
-        if(f16==NULL) {
-          printf("quit \n");
-          exit(0);
-        }
-        f17=fopen("./occ_0p9.txt", "w");
-        if(f17==NULL) {
-          printf("quit \n");
-          exit(0);
-        }
+
            amin=91;     
            Va=0;ks[0]=147;ks[1]=17; nuc=147-amin+1; a=20; ksm=amin+a;                   
            for(i=0;i<nuc;i++) {
@@ -226,39 +195,14 @@ int main() {
              for(t=0;t<nuc;t++) {
                 sumd=sumd+pow(Omd[t]-(sO/nuc),2.0); sump=sump+pow(pdO[t]-(pO/nuc),2.0);
              }
-             d1=sqrt(sumd/nuc); d2=sqrt(sump/nuc);             
-
-             
-             if((Osum/L1)>0.699 && (Osum/L1)<0.701) {
-                fprintf(f6,"%lf %lf %lf %lf %lf %lf %lf %lf %lf %lf %lf \n",mu,E0,(Omd[56]-Omd[0]),Osum/L1,d1,d2,pO,lm,Osum3/L1,Osum2/L1,Osum1/L1); //printf("ola1 E0d %lf mu %lf \n",E0*(147-91),mu);
-             }
-             
-             if((Osum/L1)>0.749 && (Osum/L1)<0.751) {
-                fprintf(f7,"%lf %lf %lf %lf %lf %lf %lf %lf %lf %lf %lf \n",mu,E0,(Omd[56]-Omd[0]),Osum/L1,d1,d2,pO,lm,Osum3/L1,Osum2/L1,Osum1/L1); //printf("ola2 E0d %lf mu %lf \n",E0*(147-91),mu);
-             }
-             
-             if((d1>0 && d1<0.0001) && ((Osum/L1)>0.1)){
-                fprintf(f8,"%lf %lf %lf %lf %lf %lf %lf %lf %lf %lf %lf \n",mu,E0,(Omd[56]-Omd[0]),Osum/L1,d1,d2,pO,lm,Osum3/L1,Osum2/L1,Osum1/L1); //printf("ola4 E0d %lf mu %lf \n",E0*(147-91),mu);
-             }
+             d1=sqrt(sumd/nuc); d2=sqrt(sump/nuc);            
 
              fprintf(f4,"%lf %lf %lf %lf %lf %lf %lf %lf %lf %lf %lf \n",mu,E0,(Omd[56]-Omd[0]),Osum/L1,d1,d2,pO,lm,Osum3/L1,Osum2/L1,Osum1/L1); 
              //fprintf(f5,"%ld %ld %lf \n",h,w,den1b); fprintf(f6,"%ld %ld %lf \n",h,w,den2b); fprintf(f7,"%ld %ld %lf \n",h,w,den3b);  
-             
-             if((Osum/L1)>0.799 && (Osum/L1)<0.801) {
-                fprintf(f15,"%lf %lf %lf %lf %lf %lf %lf %lf %lf %lf %lf \n",mu,E0,(Omd[56]-Omd[0]),Osum/L1,d1,d2,pO,lm,Osum3/L1,Osum2/L1,Osum1/L1); //printf("ola3 E0d %lf mu %lf \n",E0*(147-91),mu);
-             }
-             
-             if((Osum/L1)>0.849 && (Osum/L1)<0.851) {
-                fprintf(f16,"%lf %lf %lf %lf %lf %lf %lf %lf %lf %lf %lf \n",mu,E0,(Omd[56]-Omd[0]),Osum/L1,d1,d2,pO,lm,Osum3/L1,Osum2/L1,Osum1/L1); //printf("ola1 E0d %lf mu %lf \n",E0*(147-91),mu);
-             }
-             
-             if((Osum/L1)>0.899 && (Osum/L1)<0.901) {
-                fprintf(f17,"%lf %lf %lf %lf %lf %lf %lf %lf %lf %lf %lf \n",mu,E0,(Omd[56]-Omd[0]),Osum/L1,d1,d2,pO,lm,Osum3/L1,Osum2/L1,Osum1/L1); //printf("ola2 E0d %lf mu %lf \n",E0*(147-91),mu);
-             }
          } 
          printf("ZfL %lf nuc %ld ksm %ld lx %lf pO %lf lm %lf h %ld w %ld \n",Zf[L-1],nuc,ksm,lx,pO,lm,h,w);  
       }
-        fclose(f4); fclose(f6); fclose(f7); fclose(f8); fclose(f15); fclose(f16); fclose(f17); return(0); 
+        fclose(f4); return(0); 
 }
 
 
