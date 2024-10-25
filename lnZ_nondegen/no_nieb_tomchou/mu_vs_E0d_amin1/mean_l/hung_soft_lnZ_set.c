@@ -11,7 +11,7 @@
 double Zfor(long int num0,long int num1,long int num2,long int num3,double num4,double num5[L1],double num6[L1][Ns]);
 double Zbor(long int num0,long int num1,long int num2,long int num3,double num4,double num5[L1],double num6[L1][Ns]); 
 int main() {
-        FILE *f0,*f1,*f2,*f3,*f4,*f5,*f6,*f7,*f8,*f9,*f15,*f16,*f17;
+        FILE *f4;
         char c[10];
         long int i=0,i1,i2,dx,j,k,posit,ks[2],l=147,L=L1,dw0,sze,sze1,soft[1000][3],nuc,ksm,ks1,t,jfn,jb,jbxn,h=1,w,b1,b2,js,a,amin,pk,tn,hx;
         double p[L1],p1,p0,pot[L1],Es[L1],Va,gamaN=1,CN,mu,E0,Zf[L1],Zb[L1],Pn[L1],O[L1],Zfsum,Zbsum,pOx,pdO[Ns],GN0,sumG,dg;
@@ -20,73 +20,11 @@ int main() {
         static double Eij[L1][Ns],gn[2000][Ns],Gn[2000],GN[2000],Gp[5][2];
         
         
-        f9=fopen("./occ_0p525.txt", "w"); 
-        if(f9==NULL) {
-          printf("quit \n");
-          exit(0);
-        } 
-        f0=fopen("./occ_0p575.txt", "w");
-        if(f0==NULL) {
-          printf("quit \n");
-          exit(0);
-        }        
-        f1=fopen("./occ_0p625.txt", "w");
-        if(f1==NULL) {
-          printf("quit \n");
-          exit(0);
-        }
-        f2=fopen("./occ_0p675.txt", "w");
-        if(f2==NULL) {
-          printf("quit \n");
-          exit(0);
-        }
-        f3=fopen("./occ_0p725.txt", "w");
-        if(f3==NULL) {
-          printf("quit \n");
-          exit(0);
-        }
-        
         f4=fopen("./d1_mu_E0d.txt", "w");
         if(f4==NULL) {
           printf("quit \n");
           exit(0);
-        }
-        f5=fopen("./occ_0p775.txt", "w");
-        if(f5==NULL) {
-          printf("quit \n");
-          exit(0);
-        }
-        f6=fopen("./occ_0p825.txt", "w");
-        if(f6==NULL) {
-          printf("quit \n");
-          exit(0);
-        }
-        f7=fopen("./occ_0p875.txt", "w");
-        if(f7==NULL) {
-          printf("quit \n");
-          exit(0);
-        }
-        f8=fopen("./rms_0.txt", "w");
-        if(f8==NULL) {
-          printf("quit \n");
-          exit(0);
-        }
-        
-        f15=fopen("./occ_0p8.txt", "w");
-        if(f15==NULL) {
-          printf("quit \n");
-          exit(0);
-        }
-        f16=fopen("./occ_0p85.txt", "w");
-        if(f16==NULL) {
-          printf("quit \n");
-          exit(0);
-        }
-        f17=fopen("./occ_0p9.txt", "w");
-        if(f17==NULL) {
-          printf("quit \n");
-          exit(0);
-        }
+        }        
         
         tn=1; hx=-250+2*(tn-1);
            amin=1;     
@@ -260,58 +198,13 @@ int main() {
                 sumd=sumd+pow(Omd[t]-(sO/nuc),2.0); sump=sump+pow(pdO[t]-(pO/nuc),2.0);
              }
              d1=sqrt(sumd/nuc); d2=sqrt(sump/nuc);
-             
-             if((Osum/L1)>0.524 && (Osum/L1)<0.526) {
-                fprintf(f9,"%lf %lf %lf %lf %lf %lf %lf %lf %lf %lf %lf \n",mu,E0,(Omd[56]-Omd[0]),Osum/L1,d1,d2,pO,lm,Osum3/L1,Osum2/L1,Osum1/L1); //printf("ola1 E0d %lf mu %lf \n",E0*(147-91),mu);
-             }
-             if((Osum/L1)>0.574 && (Osum/L1)<0.576) {
-                fprintf(f0,"%lf %lf %lf %lf %lf %lf %lf %lf %lf %lf %lf \n",mu,E0,(Omd[56]-Omd[0]),Osum/L1,d1,d2,pO,lm,Osum3/L1,Osum2/L1,Osum1/L1); //printf("ola1 E0d %lf mu %lf \n",E0*(147-91),mu);
-             }
-             if((Osum/L1)>0.624 && (Osum/L1)<0.626) {
-                fprintf(f1,"%lf %lf %lf %lf %lf %lf %lf %lf %lf %lf %lf \n",mu,E0,(Omd[56]-Omd[0]),Osum/L1,d1,d2,pO,lm,Osum3/L1,Osum2/L1,Osum1/L1); //printf("ola1 E0d %lf mu %lf \n",E0*(147-91),mu);
-             }
-             if((Osum/L1)>0.674 && (Osum/L1)<0.676) {
-                fprintf(f2,"%lf %lf %lf %lf %lf %lf %lf %lf %lf %lf %lf \n",mu,E0,(Omd[56]-Omd[0]),Osum/L1,d1,d2,pO,lm,Osum3/L1,Osum2/L1,Osum1/L1); //printf("ola1 E0d %lf mu %lf \n",E0*(147-91),mu);
-             }
-             
-             if((Osum/L1)>0.724 && (Osum/L1)<0.726) {
-                fprintf(f3,"%lf %lf %lf %lf %lf %lf %lf %lf %lf %lf %lf \n",mu,E0,(Omd[56]-Omd[0]),Osum/L1,d1,d2,pO,lm,Osum3/L1,Osum2/L1,Osum1/L1); //printf("ola2 E0d %lf mu %lf \n",E0*(147-91),mu);
-             }
-             
-             if((Osum/L1)>0.774 && (Osum/L1)<0.776) {
-                fprintf(f5,"%lf %lf %lf %lf %lf %lf %lf %lf %lf %lf %lf \n",mu,E0,(Omd[56]-Omd[0]),Osum/L1,d1,d2,pO,lm,Osum3/L1,Osum2/L1,Osum1/L1); //printf("ola3 E0d %lf mu %lf \n",E0*(147-91),mu);
-             }
-             
-             if((Osum/L1)>0.824 && (Osum/L1)<0.826) {
-                fprintf(f6,"%lf %lf %lf %lf %lf %lf %lf %lf %lf %lf %lf \n",mu,E0,(Omd[56]-Omd[0]),Osum/L1,d1,d2,pO,lm,Osum3/L1,Osum2/L1,Osum1/L1); //printf("ola1 E0d %lf mu %lf \n",E0*(147-91),mu);
-             }
-             
-             if((Osum/L1)>0.874 && (Osum/L1)<0.876) {
-                fprintf(f7,"%lf %lf %lf %lf %lf %lf %lf %lf %lf %lf %lf \n",mu,E0,(Omd[56]-Omd[0]),Osum/L1,d1,d2,pO,lm,Osum3/L1,Osum2/L1,Osum1/L1); //printf("ola2 E0d %lf mu %lf \n",E0*(147-91),mu);
-             }
-             
-             if((d1>0 && d1<0.0001) && ((Osum/L1)>0.1)){
-                fprintf(f8,"%lf %lf %lf %lf %lf %lf %lf %lf %lf %lf %lf \n",mu,E0,(Omd[56]-Omd[0]),Osum/L1,d1,d2,pO,lm,Osum3/L1,Osum2/L1,Osum1/L1); //printf("ola4 E0d %lf mu %lf \n",E0*(147-91),mu);
-             }
 
              fprintf(f4,"%lf %lf %lf %lf %lf %lf %lf %lf %lf %lf %lf \n",mu,E0,(Omd[56]-Omd[0]),Osum/L1,d1,d2,pO,lm,Osum3/L1,Osum2/L1,Osum1/L1); 
              //fprintf(f5,"%ld %ld %lf \n",h,w,den1b); fprintf(f6,"%ld %ld %lf \n",h,w,den2b); fprintf(f7,"%ld %ld %lf \n",h,w,den3b);  
-             
-             if((Osum/L1)>0.799 && (Osum/L1)<0.801) {
-                fprintf(f15,"%lf %lf %lf %lf %lf %lf %lf %lf %lf %lf %lf \n",mu,E0,(Omd[56]-Omd[0]),Osum/L1,d1,d2,pO,lm,Osum3/L1,Osum2/L1,Osum1/L1); //printf("ola3 E0d %lf mu %lf \n",E0*(147-91),mu);
-             }
-             
-             if((Osum/L1)>0.849 && (Osum/L1)<0.851) {
-                fprintf(f16,"%lf %lf %lf %lf %lf %lf %lf %lf %lf %lf %lf \n",mu,E0,(Omd[56]-Omd[0]),Osum/L1,d1,d2,pO,lm,Osum3/L1,Osum2/L1,Osum1/L1); //printf("ola1 E0d %lf mu %lf \n",E0*(147-91),mu);
-             }
-             
-             if((Osum/L1)>0.899 && (Osum/L1)<0.901) {
-                fprintf(f17,"%lf %lf %lf %lf %lf %lf %lf %lf %lf %lf %lf \n",mu,E0,(Omd[56]-Omd[0]),Osum/L1,d1,d2,pO,lm,Osum3/L1,Osum2/L1,Osum1/L1); //printf("ola2 E0d %lf mu %lf \n",E0*(147-91),mu);
-             }
          } 
          printf("ZfL %lf nuc %ld ksm %ld lx %lf pO %lf lm %lf h %ld w %ld \n",Zf[L-1],nuc,ksm,lx,pO,lm,h,w);  
       }
-        fclose(f0); fclose(f1); fclose(f2); fclose(f3); fclose(f4); fclose(f5); fclose(f6); fclose(f7); fclose(f8); fclose(f9); fclose(f15); fclose(f16); fclose(f17); return(0); 
+      fclose(f4); return(0); 
 }
 
 
