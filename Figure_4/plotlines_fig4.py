@@ -1,4 +1,4 @@
-_import matplotlib
+import matplotlib
 import matplotlib.pyplot as plt
 from mpl_toolkits.axes_grid1 import make_axes_locatable
 from mpl_toolkits.axes_grid1.inset_locator import inset_axes
