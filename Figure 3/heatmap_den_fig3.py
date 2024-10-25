@@ -35,7 +35,7 @@ lm=[]
 data1 = np.zeros( (250, 250) )
 data2 = np.zeros( (250, 250) )
 data3 = np.zeros( (250, 250) )
-f = open('/media/hungyo/edrive/hung_ens_laptop/hungyo_nucdyn/NucleoModel/lnZ_nondegen/mu_vs_E0d/mean_l/d1_mu_E0d.txt','r') # model 1
+f = open('/lnZ_nondegen/mu_vs_E0d/mean_l/d1_mu_E0d.txt','r') # model 1
 for row in f:
     row = row.split(' ')
     mu2.append(float(row[0]))
@@ -95,7 +95,7 @@ E11xO3=np.multiply(E01xO3,n)
 mu1y=[]
 E01y=[]
 pO1y=[]
-f = open('/media/hungyo/edrive/hung_ens_laptop/hungyo_nucdyn/NucleoModel/lnZ_nondegen/no_nieb_cedric/d1_mu_E0d.txt','r') # model 1 & theory 
+f = open('/lnZ_nondegen/no_nieb_cedric/d1_mu_E0d.txt','r') # model 1 & theory 
 for row in f:
     row = row.split(' ')
     mu1y.append(float(row[0]))
@@ -206,7 +206,7 @@ lm=[]
 data1 = np.zeros( (250, 250) )
 data2 = np.zeros( (250, 250) )
 data3 = np.zeros( (250, 250) )
-f = open('/media/hungyo/edrive/hung_ens_laptop/hungyo_nucdyn/NucleoModel/lnZ_nondegen/no_nieb_tomchou/mu_vs_E0d/mean_l/d1_mu_E0d.txt','r') # model 2
+f = open('/lnZ_nondegen/no_nieb_tomchou/mu_vs_E0d/mean_l/d1_mu_E0d.txt','r') # model 2
 for row in f:
     row = row.split(' ')
     mu2.append(float(row[0]))
@@ -363,7 +363,7 @@ lm=[]
 data1 = np.zeros( (250, 250) )
 data2 = np.zeros( (250, 250) )
 data3 = np.zeros( (250, 250) )
-f = open('/media/hungyo/edrive/hung_ens_laptop/hungyo_nucdyn/NucleoModel/lnZ_nondegen/no_nieb_tomchou/mu_vs_E0d_amin1/mean_l/d1_mu_E0d.txt','r') # model 3
+f = open('/lnZ_nondegen/no_nieb_tomchou/mu_vs_E0d_amin1/mean_l/d1_mu_E0d.txt','r') # model 3
 for row in f:
     row = row.split(' ')
     mu2.append(float(row[0]))
@@ -518,7 +518,7 @@ lm=[]
 data1 = np.zeros( (500, 500) )
 data2 = np.zeros( (500, 500) )
 data3 = np.zeros( (500, 500) )
-f = open('/media/hungyo/edrive/hung_ens_laptop/hungyo_nucdyn/NucleoModel/lnZ_nondegen/fixed_tonks_gas_model/mu_vs_E0d/d1_mu_E0d.txt','r')
+f = open('/lnZ_nondegen/fixed_tonks_gas_model/mu_vs_E0d/d1_mu_E0d.txt','r') # fixed-size model
 for row in f:
     row = row.split(' ')
     mu2.append(float(row[0]))
