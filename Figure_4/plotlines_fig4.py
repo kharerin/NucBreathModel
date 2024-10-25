@@ -1,4 +1,4 @@
-import matplotlib
+_import matplotlib
 import matplotlib.pyplot as plt
 from mpl_toolkits.axes_grid1 import make_axes_locatable
 from mpl_toolkits.axes_grid1.inset_locator import inset_axes
@@ -16,7 +16,7 @@ lm=[]
 data1 = np.zeros( (6, 575) )
 data4 = np.zeros( (6, 575) )
 data5 = np.zeros( (6, 575) )
-f = open('/media/hungyo/edrive/hung_ens_laptop/hungyo_nucdyn/NucleoModel/lnZ_nondegen/mu_-21p6kt_E0d8p4/nieb2/kevin_fig_ver2/large_remod2/score_scanA1/density_amin91_vs_mu/den_mu_E0d.txt','r')
+f = open('/lnZ_nondegen/model_1/density_amin91_vs_mu/den_mu_E0d.txt','r')
 for row in f:
     row = row.split(' ')
     mu.append(float(row[0]))
@@ -61,7 +61,7 @@ lmx=[]
 data1x = np.zeros( (6, 575) )
 data4x = np.zeros( (6, 575) )
 data5x = np.zeros( (6, 575) )
-f = open('/media/hungyo/edrive/hung_ens_laptop/hungyo_nucdyn/NucleoModel/lnZ_nondegen/fixed_tonks_gas_model/density_vs_mu/den_mu_E0d.txt','r')
+f = open('/lnZ_nondegen/fixed_tonks_gas_model/density_vs_mu/den_mu_E0d.txt','r')
 for row in f:
     row = row.split(' ')
     mux.append(float(row[0]))
@@ -139,7 +139,7 @@ lm=[]
 data1 = np.zeros( (6, 575) )
 data4 = np.zeros( (6, 575) )
 data5 = np.zeros( (6, 575) )
-f = open('/media/hungyo/edrive/hung_ens_laptop/hungyo_nucdyn/NucleoModel/lnZ_nondegen/no_nieb_tomchou/density_amin91_vs_mu/den_mu_E0d.txt','r')
+f = open('/lnZ_nondegen/no_nieb_tomchou/density_amin91_vs_mu/den_mu_E0d.txt','r')
 for row in f:
     row = row.split(' ')
     mu.append(float(row[0]))
@@ -163,7 +163,7 @@ for i in range(6):
 mu=[]
 lm=[]
 data3 = np.zeros( (6, 575) )
-f = open('/media/hungyo/edrive/hung_ens_laptop/hungyo_nucdyn/NucleoModel/lnZ_nondegen/fixed_tonks_gas_model/density_vs_mu/den_mu_E0d.txt','r')
+f = open('/lnZ_nondegen/fixed_tonks_gas_model/density_vs_mu/den_mu_E0d.txt','r')
 for row in f:
     row = row.split(' ')
     mu.append(float(row[0]))
@@ -250,7 +250,7 @@ lm=[]
 data1 = np.zeros( (6, 575) )
 data4 = np.zeros( (6, 575) )
 data5 = np.zeros( (6, 575) )
-f = open('/media/hungyo/edrive/hung_ens_laptop/hungyo_nucdyn/NucleoModel/lnZ_nondegen/no_nieb_tomchou/density_amin1_vs_mu/den_mu_E0d.txt','r')
+f = open('/lnZ_nondegen/no_nieb_tomchou/density_amin1_vs_mu/den_mu_E0d.txt','r')
 for row in f:
     row = row.split(' ')
     mu.append(float(row[0]))
