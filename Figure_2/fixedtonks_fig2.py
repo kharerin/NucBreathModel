@@ -50,7 +50,7 @@ lm=[]
 data1 = np.zeros( (9, 575) )
 data4 = np.zeros( (9, 575) )
 data5 = np.zeros( (9, 575) )
-f = open('/density_fixedsize_vs_mu/den_mu_E0d.txt','r')
+f = open('/lnZ_nondegen/model_1/density_fixedsize_vs_mu/den_mu_E0d.txt','r')
 for row in f:
     row = row.split(' ')
     mu.append(float(row[0]))
@@ -130,7 +130,7 @@ lm=[]
 ms=[]
 data1 = np.zeros(300)
 data4 = np.zeros(300)
-f = open('/density_fixedsize_vs_mu/critical_mu/den_mu_E0d.txt','r')
+f = open('/lnZ_nondegen/model_1/density_fixedsize_vs_mu/critical_mu/den_mu_E0d.txt','r')
 for row in f:
     row = row.split(' ')
     mu.append(float(row[0]))
@@ -197,7 +197,7 @@ lm=[]
 ms=[]
 data1 = np.zeros(300)
 data4 = np.zeros(300)
-f = open('/density_fixedsize_vs_mu/critical_mu_lk_20/den_mu_E0d.txt','r')
+f = open('/lnZ_nondegen/model_1/density_fixedsize_vs_mu/critical_mu_lk_20/den_mu_E0d.txt','r')
 for row in f:
     row = row.split(' ')
     mu.append(float(row[0]))
