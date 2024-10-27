@@ -8,14 +8,20 @@ import string
     
 fig, ax = plt.subplots(1,3,figsize=(9,4.4))
 
+f1='./E0d_e0_147_hc_a_0/'
+f2='./E0d_e0_91_hc_a_0/'
+
 o1=[]; o2=[]; o3=[]; o4=[]; o11=[]
 o11 = np.zeros(2000)
-f = open('/media/hungyo/edrive/hung_ens_laptop/hungyo_nucdyn/NucleoModel/lnZ_nondegen/mu_-21p6kt_E0d8p4/nieb2/kevin_fig_ver2/large_remod2/score_scanA1/g_r_lnZ/E0d_e0_147_hc_a_0/E0d_-0p034kT_mu_-15kT/gr.txt','r')
+f3='E0d_-0p034kT_mu_-15kT/gr.txt'
+fx=''.join((f1,f3))
+print('filename...',fx)
+f = open(fx,'r')
 for row in f:
     row = row.split(' ')
     o1.append(float(row[0]))
     o2.append(float(row[1]))
-
+f.close()
 for i in range(2000):    
     o11[i]=(o1[i])/1000
 
@@ -29,39 +35,51 @@ plt.ylim(0,10)
 plt.plot(o11[0:1000], o2[0:1000], c = 'black',label=r"$\mu=-15$")
 
 o1=[]; o2=[];
-f = open('/media/hungyo/edrive/hung_ens_laptop/hungyo_nucdyn/NucleoModel/lnZ_nondegen/mu_-21p6kt_E0d8p4/nieb2/kevin_fig_ver2/large_remod2/score_scanA1/g_r_lnZ/E0d_e0_147_hc_a_0/E0d_-0p034kT_mu_-10kT/gr.txt','r')
+f3='E0d_-0p034kT_mu_-10kT/gr.txt'
+fx=''.join((f1,f3))
+print('filename...',fx)
+f = open(fx,'r')
 for row in f:
     row = row.split(' ')
     o1.append(float(row[0]))
     o2.append(float(row[1]))
-
+f.close()
 plt.plot(o11[0:1000], o2[0:1000], c = 'darkolivegreen',label=r"$\mu=-10$")
 
 o1=[]; o2=[];
-f = open('/media/hungyo/edrive/hung_ens_laptop/hungyo_nucdyn/NucleoModel/lnZ_nondegen/mu_-21p6kt_E0d8p4/nieb2/kevin_fig_ver2/large_remod2/score_scanA1/g_r_lnZ/E0d_e0_147_hc_a_0/E0d_-0p034kT_mu_0kT/gr.txt','r')
+f3='E0d_-0p034kT_mu_0kT/gr.txt'
+fx=''.join((f1,f3))
+print('filename...',fx)
+f = open(fx,'r')
 for row in f:
     row = row.split(' ')
     o1.append(float(row[0]))
     o2.append(float(row[1]))
-
+f.close()
 plt.plot(o11[0:1000], o2[0:1000], c = 'b',linestyle='dashed',label=r"$\mu=0$")
 
 o1=[]; o2=[];
-f = open('/media/hungyo/edrive/hung_ens_laptop/hungyo_nucdyn/NucleoModel/lnZ_nondegen/mu_-21p6kt_E0d8p4/nieb2/kevin_fig_ver2/large_remod2/score_scanA1/g_r_lnZ/E0d_e0_147_hc_a_0/E0d_-0p034kT_mu_10kT/gr.txt','r')
+f3='E0d_-0p034kT_mu_10kT/gr.txt'
+fx=''.join((f1,f3))
+print('filename...',fx)
+f = open(fx,'r')
 for row in f:
     row = row.split(' ')
     o1.append(float(row[0]))
     o2.append(float(row[1]))
-
+f.close()
 plt.plot(o11[0:1000], o2[0:1000], c = 'red',label=r"$\mu=10$")
 
 o1=[]; o2=[];
-f = open('/media/hungyo/edrive/hung_ens_laptop/hungyo_nucdyn/NucleoModel/lnZ_nondegen/mu_-21p6kt_E0d8p4/nieb2/kevin_fig_ver2/large_remod2/score_scanA1/g_r_lnZ/E0d_e0_147_hc_a_0/E0d_-0p034kT_mu_15kT/gr.txt','r')
+f3='E0d_-0p034kT_mu_15kT/gr.txt'
+fx=''.join((f1,f3))
+print('filename...',fx)
+f = open(fx,'r')
 for row in f:
     row = row.split(' ')
     o1.append(float(row[0]))
     o2.append(float(row[1]))
-
+f.close()
 plt.plot(o11[0:1000], o2[0:1000], c = 'darkred',label=r"$\mu=15$")
 
 #plt.plot(o11[955:1500], o3[955:1500], c = 'blue')
@@ -73,12 +91,15 @@ print('panel A...')
 
 o1=[]; o2=[]; o3=[]; o4=[]; o11=[]
 o11 = np.zeros(2000)
-f = open('/media/hungyo/edrive/hung_ens_laptop/hungyo_nucdyn/NucleoModel/lnZ_nondegen/mu_-21p6kt_E0d8p4/nieb2/kevin_fig_ver2/large_remod2/score_scanA1/g_r_lnZ/E0d_e0_91_hc_a_0/E0d_-0p034kT_mu_-15kT/gr.txt','r')
+f3='E0d_-0p034kT_mu_-15kT/gr.txt'
+fx=''.join((f2,f3))
+print('filename...',fx)
+f = open(fx,'r')
 for row in f:
     row = row.split(' ')
     o1.append(float(row[0]))
     o2.append(float(row[1]))
-
+f.close()
 for i in range(2000):    
     o11[i]=(o1[i])/1000
 
@@ -92,39 +113,51 @@ plt.ylim(0,10)
 plt.plot(o11[0:1000], o2[0:1000], c = 'black',label=r"$\mu=-15$")
 
 o1=[]; o2=[];
-f = open('/media/hungyo/edrive/hung_ens_laptop/hungyo_nucdyn/NucleoModel/lnZ_nondegen/mu_-21p6kt_E0d8p4/nieb2/kevin_fig_ver2/large_remod2/score_scanA1/g_r_lnZ/E0d_e0_91_hc_a_0/E0d_-0p034kT_mu_-10kT/gr.txt','r')
+f3='E0d_-0p034kT_mu_-10kT/gr.txt'
+fx=''.join((f2,f3))
+print('filename...',fx)
+f = open(fx,'r')
 for row in f:
     row = row.split(' ')
     o1.append(float(row[0]))
     o2.append(float(row[1]))
-
+f.close()
 plt.plot(o11[0:1000], o2[0:1000], c = 'darkolivegreen',label=r"$\mu=-10$")
 
 o1=[]; o2=[];
-f = open('/media/hungyo/edrive/hung_ens_laptop/hungyo_nucdyn/NucleoModel/lnZ_nondegen/mu_-21p6kt_E0d8p4/nieb2/kevin_fig_ver2/large_remod2/score_scanA1/g_r_lnZ/E0d_e0_91_hc_a_0/E0d_-0p034kT_mu_0kT/gr.txt','r')
+f3='E0d_-0p034kT_mu_0kT/gr.txt'
+fx=''.join((f2,f3))
+print('filename...',fx)
+f = open(fx,'r')
 for row in f:
     row = row.split(' ')
     o1.append(float(row[0]))
     o2.append(float(row[1]))
-
+f.close()
 plt.plot(o11[0:1000], o2[0:1000], c = 'b',linestyle='dashed',label=r"$\mu=0$")
 
 o1=[]; o2=[];
-f = open('/media/hungyo/edrive/hung_ens_laptop/hungyo_nucdyn/NucleoModel/lnZ_nondegen/mu_-21p6kt_E0d8p4/nieb2/kevin_fig_ver2/large_remod2/score_scanA1/g_r_lnZ/E0d_e0_91_hc_a_0/E0d_-0p034kT_mu_10kT/gr.txt','r')
+f3='E0d_-0p034kT_mu_10kT/gr.txt'
+fx=''.join((f2,f3))
+print('filename...',fx)
+f = open(fx,'r')
 for row in f:
     row = row.split(' ')
     o1.append(float(row[0]))
     o2.append(float(row[1]))
-
+f.close()
 plt.plot(o11[0:1000], o2[0:1000], c = 'r',label=r"$\mu=10$")
 
 o1=[]; o2=[];
-f = open('/media/hungyo/edrive/hung_ens_laptop/hungyo_nucdyn/NucleoModel/lnZ_nondegen/mu_-21p6kt_E0d8p4/nieb2/kevin_fig_ver2/large_remod2/score_scanA1/g_r_lnZ/E0d_e0_91_hc_a_0/E0d_-0p034kT_mu_15kT/gr.txt','r')
+f3='E0d_-0p034kT_mu_15kT/gr.txt'
+fx=''.join((f2,f3))
+print('filename...',fx)
+f = open(fx,'r')
 for row in f:
     row = row.split(' ')
     o1.append(float(row[0]))
     o2.append(float(row[1]))
-
+f.close()
 plt.plot(o11[0:1000], o2[0:1000], c = 'darkred',label=r"$\mu=15$")
 
 #plt.plot(o11[955:1500], o3[955:1500], c = 'blue')
@@ -137,7 +170,10 @@ print('panel B...')
 o1=[]; o2=[]; o3=[]; o4=[]; o5=[]; 
 o3x=np.zeros(20)
 o11 = np.zeros(2000)
-f = open('/media/hungyo/edrive/hung_ens_laptop/hungyo_nucdyn/NucleoModel/lnZ_nondegen/mu_-21p6kt_E0d8p4/nieb2/kevin_fig_ver2/large_remod2/score_scanA1/g_r_lnZ/E0d_e0_91_hc_a_0/mean_dg_vs_mu/d1_mu_E0d.txt','r')
+f3='mean_dg_vs_mu_fig7/d1_mu_E0d.txt'
+fx=''.join((f2,f3))
+print('filename...',fx)
+f = open(fx,'r')
 for row in f:
     row = row.split(' ')
     o1.append(float(row[0]))
@@ -145,7 +181,7 @@ for row in f:
     o3.append(float(row[2]))
     o4.append(float(row[3]))
     o5.append(float(row[4]))
-
+f.close()
 for i in range(20):    
     o3x[i]=1/((o3[i])*0.0001)
 
@@ -162,7 +198,10 @@ plt.plot(o4, o3x,'o-',c = 'grey',fillstyle='none',label='Fixed $l=91$')
 o1=[]; o2=[]; o3=[]; o4=[]; o5=[]; 
 o3x=np.zeros(20)
 o11 = np.zeros(2000)
-f = open('/media/hungyo/edrive/hung_ens_laptop/hungyo_nucdyn/NucleoModel/lnZ_nondegen/mu_-21p6kt_E0d8p4/nieb2/kevin_fig_ver2/large_remod2/score_scanA1/g_r_lnZ/E0d_e0_147_hc_a_0/mean_dg_vs_mu_fig7/d1_mu_E0d.txt','r')
+f3='mean_dg_vs_mu_fig7/d1_mu_E0d.txt'
+fx=''.join((f1,f3))
+print('filename...',fx)
+f = open(fx,'r')
 for row in f:
     row = row.split(' ')
     o1.append(float(row[0]))
@@ -170,6 +209,7 @@ for row in f:
     o3.append(float(row[2]))
     o4.append(float(row[3]))
     o5.append(float(row[4]))
+f.close()
 for i in range(20):    
     o3x[i]=1/((o3[i])*0.0001)
 
@@ -187,45 +227,13 @@ for row in f:
     o3.append(float(row[2]))
     o4.append(float(row[3]))
     o5.append(float(row[4]))
+f.close()
 for i in range(20):    
     o3x[i]=1/((o3[i])*0.0001)
 
 plt.plot(o4, o3x,'o-',c = 'red',label='model-1')
 #plt.scatter(o4, o3x, s=8, c = 'red',label='model-1')
 
-o1=[]; o2=[]; o3=[]; o4=[]; o5=[]; 
-o3x=np.zeros(20)
-o11 = np.zeros(2000)
-f = open('/media/hungyo/edrive/hung_ens_laptop/hungyo_nucdyn/NucleoModel/lnZ_nondegen/no_nieb_tomchou/mu_vs_E0d/mean_dg_vs_mu_fig7/e0_-0p034/d1_mu_E0d.txt','r')
-for row in f:
-    row = row.split(' ')
-    o1.append(float(row[0]))
-    o2.append(float(row[1]))
-    o3.append(float(row[2]))
-    o4.append(float(row[3]))
-    o5.append(float(row[4]))
-for i in range(20):    
-    o3x[i]=1/((o3[i])*0.0001)
-
-#plt.plot(o4, o3x,'o-',c = 'blue',label='model-2')
-#plt.scatter(o4, o3x, s=8, c = 'blue',label='model-2')
-
-o1=[]; o2=[]; o3=[]; o4=[]; o5=[]; 
-o3x=np.zeros(20)
-o11 = np.zeros(2000)
-f = open('/media/hungyo/edrive/hung_ens_laptop/hungyo_nucdyn/NucleoModel/lnZ_nondegen/no_nieb_tomchou/mu_vs_E0d_amin1/mean_dg_vs_mu_fig7/e0_-0p034/d1_mu_E0d.txt','r')
-for row in f:
-    row = row.split(' ')
-    o1.append(float(row[0]))
-    o2.append(float(row[1]))
-    o3.append(float(row[2]))
-    o4.append(float(row[3]))
-    o5.append(float(row[4]))
-for i in range(20):    
-    o3x[i]=1/((o3[i])*0.0001)
-
-#plt.plot(o4, o3x,'o-',c = 'green',label='model-3')
-#plt.scatter(o4, o3x, s=8, c = 'green',label='model-3')
 
 xx=np.zeros(21)
 for i in range(21):    
