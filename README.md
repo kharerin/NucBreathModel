@@ -81,3 +81,11 @@ To generate figure 6, run:
 $ python3 heatmap_equiprob_fig6.py
 ```
 Open the python code "heatmap_equiprob_fig6.py" to find the directory paths to the codes. 
+
+## Figure 7
+To generate figure 7, run:
+```
+$ python3 heatmap_den_fig7.py
+```
+Open the python code "heatmap_den_fig7.py" to find the directory paths to the codes. 
+
