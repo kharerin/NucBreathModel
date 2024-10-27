@@ -219,7 +219,7 @@ plt.plot(o4, o3x,'o-',c = 'grey',label='Fixed $l=147$')
 o1=[]; o2=[]; o3=[]; o4=[]; o5=[]; 
 o3x=np.zeros(20)
 o11 = np.zeros(2000)
-f = open('/media/hungyo/edrive/hung_ens_laptop/hungyo_nucdyn/NucleoModel/lnZ_nondegen/mu_vs_E0d/mean_dg_vs_mu_fig7/e0_-0p034/d1_mu_E0d.txt','r')
+f = open('/lnZ_nondegen/mu_vs_E0d/mean_dg_vs_mu_fig7/e0_-0p034/d1_mu_E0d.txt','r')
 for row in f:
     row = row.split(' ')
     o1.append(float(row[0]))
