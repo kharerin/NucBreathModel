@@ -8,8 +8,8 @@ import string
     
 fig, ax = plt.subplots(1,3,figsize=(9,4.4))
 
-f1='./E0d_e0_147_hc_a_0/'
-f2='./E0d_e0_91_hc_a_0/'
+f1='/lnZ_nondegen/model_1/g_r_lnZ/E0d_e0_147_hc_a_0/'
+f2='/lnZ_nondegen/model_1/g_r_lnZ/E0d_e0_91_hc_a_0/'
 
 o1=[]; o2=[]; o3=[]; o4=[]; o11=[]
 o11 = np.zeros(2000)
