@@ -9,7 +9,7 @@ fig, ax = plt.subplots(1,2,figsize=(8.2,3.8))
 mu2=[]
 E02=[]
 lm=[]
-f = open('/media/hungyo/edrive/hung_ens_laptop/hungyo_nucdyn/NucleoModel/lnZ_nondegen/mu_vs_E0d/mean_l/d1_mu_E0d.txt','r')
+f = open('/lnZ_nondegen/mu_vs_E0d/mean_l/d1_mu_E0d.txt','r')
 for row in f:
     row = row.split(' ')
     mu2.append(float(row[0]))
@@ -35,7 +35,7 @@ data1 = np.zeros( (500, 500) )
 data2 = np.zeros( (500, 500) )
 data3 = np.zeros( (500, 500) )
 data4 = np.zeros( (500, 500) )
-f = open('/media/hungyo/edrive/hung_ens_laptop/hungyo_nucdyn/NucleoModel/lnZ_nondegen/mu_vs_E0d/d1_mu_E0d.txt','r')
+f = open('/lnZ_nondegen/mu_vs_E0d/d1_mu_E0d.txt','r')
 for row in f:
     row = row.split(' ')
     mu.append(float(row[0]))
@@ -74,7 +74,7 @@ for i in range(500):
 mu1=[]
 E01=[]
 pO1=[]
-f = open('/media/hungyo/edrive/hung_ens_laptop/hungyo_nucdyn/NucleoModel/lnZ_nondegen/no_nieb_cedric/d1_mu_E0d.txt','r')
+f = open('/lnZ_nondegen/no_nieb_cedric/d1_mu_E0d.txt','r')
 for row in f:
     row = row.split(' ')
     mu1.append(float(row[0]))
