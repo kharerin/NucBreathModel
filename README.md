@@ -73,11 +73,11 @@ To generate figure 5, run:
 ```
 $ python3 fqlkr_fig5.py
 ```
-The data and codes can be found in the sub-directories "E0d_xxkT_mu_yykT" in the directory "lnZ_nondegen/no_nieb_cedric/". Here, $\epsilon_0$=xx, and $\mu$=yy and the code uses E0d=-$\epsilon_0$.
+The data and codes can be found in the sub-directories "E0d_xxkT_mu_yykT" in the directory "lnZ_nondegen/no_nieb_cedric/". Here, $\epsilon_0$=xx, and $\mu$=yy and note that the code uses $\rm{E0d}=-\epsilon_0$.
 
 ## Figure 6
 To generate figure 6, run:
 ```
 $ python3 heatmap_equiprob_fig6.py
 ```
-Data has been pregenerated for you and can be found in the directory "lnZ_nondegen/no_nieb_cedric/". It can also be generated uisng the C codes therein.
+Open the python code "heatmap_equiprob_fig6.py" to find the directory paths to the codes. 
