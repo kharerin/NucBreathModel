@@ -17,12 +17,13 @@ To generate the figure 2, run:
 ```
 $ python3 fixedtonks_fig2.py
 ```
-Data has been pregenerated for you and can be found in the same folder. Otherwise it can be generated using the commands:
+The data can be generated using the commands:
 ```
+$ cd lnZ_nondegen/model_1/density_fixedsize_vs_mu/
 $ gcc hung_soft_lnZ.c -lm 
 $ ./a.out
 ```
-It computs density and occupancy and be found in the folder density_fixedsize_vs_mu. To calculate the critical chemical potential vs wrapping length (the third panel of figure 2) for $l_{k}=0$ and $l_k=20$, run the codes /critical_mu/hung_soft_lnZ.c and /critical_mu_lk_20/hung_soft_lnZ.c, respectively. 
+It computes density and occupancy and be found in the folder density_fixedsize_vs_mu. To calculate the critical chemical potential vs wrapping length (the third panel of figure 2) for $l_{k}=0$ and $l_k=20$, run the codes /critical_mu/hung_soft_lnZ.c and /critical_mu_lk_20/hung_soft_lnZ.c, respectively. 
 
 ## Figure 3
 To generate the figure 3, run:
