@@ -26,7 +26,7 @@ o11 = np.zeros(57)
 for i in range(57):
     o11[i]=91+i   
     
-f2='E0d_-20kT_mu_-25kT/frag_nie2_occ_0pxx.txt'
+f2='E0d_-0p36kT_mu_-25kT/frag_nie2_occ_0pxx.txt'
 fx=''.join((f1,f2))
 print('filename...',fx)
 f = open(fx,'r')
@@ -44,7 +44,7 @@ o11 = np.zeros(57)
 for i in range(57):
     o11[i]=91+i    
 
-f2='E0d_-20kT_mu_-15kT/frag_nie2_occ_0pxx.txt'
+f2='E0d_-0p36kT_mu_-15kT/frag_nie2_occ_0pxx.txt'
 fx=''.join((f1,f2))
 print('filename...',fx)
 f = open(fx,'r')
@@ -62,7 +62,7 @@ o11 = np.zeros(57)
 for i in range(57):
     o11[i]=91+i 
 
-f2='E0d_-20kT_mu_-6kT/frag_nie2_occ_0pxx.txt'
+f2='E0d_-0p36kT_mu_-6kT/frag_nie2_occ_0pxx.txt'
 fx=''.join((f1,f2))
 print('filename...',fx)
 f = open(fx,'r')    
@@ -80,7 +80,7 @@ o11 = np.zeros(57)
 for i in range(57):
     o11[i]=91+i   
 
-f2='E0d_-20kT_mu_-5p25kT/frag_nie2_occ_0pxx.txt'
+f2='E0d_-0p36kT_mu_-5p25kT/frag_nie2_occ_0pxx.txt'
 fx=''.join((f1,f2))
 print('filename...',fx)
 f = open(fx,'r')    
@@ -98,7 +98,7 @@ o11 = np.zeros(57)
 for i in range(57):
     o11[i]=91+i   
 
-f2='E0d_-20kT_mu_25kT/frag_nie2_occ_0pxx.txt'
+f2='E0d_-0p36kT_mu_25kT/frag_nie2_occ_0pxx.txt'
 fx=''.join((f1,f2))
 print('filename...',fx)
 f = open(fx,'r')    
@@ -136,7 +136,7 @@ o11 = np.zeros(57)
 for i in range(57):
     o11[i]=91+i 
 
-f2='E0d_-10kT_mu_-25kT/frag_nie2_occ_0pxx.txt'
+f2='E0d_-0p18kT_mu_-25kT/frag_nie2_occ_0pxx.txt'
 fx=''.join((f1,f2))
 print('filename...',fx)  
 f = open(fx,'r')   
@@ -154,7 +154,7 @@ o11 = np.zeros(57)
 for i in range(57):
     o11[i]=91+i  
 
-f2='E0d_-10kT_mu_-15kT/frag_nie2_occ_0pxx.txt'
+f2='E0d_-0p18kT_mu_-15kT/frag_nie2_occ_0pxx.txt'
 fx=''.join((f1,f2))
 print('filename...',fx) 
 f = open(fx,'r')   
@@ -172,7 +172,7 @@ o11 = np.zeros(57)
 for i in range(57):
     o11[i]=91+i   
 
-f2='E0d_-10kT_mu_-6kT/frag_nie2_occ_0pxx.txt'
+f2='E0d_-0p18kT_mu_-6kT/frag_nie2_occ_0pxx.txt'
 fx=''.join((f1,f2))
 print('filename...',fx)  
 f = open(fx,'r')    
@@ -190,7 +190,7 @@ o11 = np.zeros(57)
 for i in range(57):
     o11[i]=91+i
 
-f2='E0d_-10kT_mu_-5p76kT/frag_nie2_occ_0pxx.txt'
+f2='E0d_-0p18kT_mu_-5p76kT/frag_nie2_occ_0pxx.txt'
 fx=''.join((f1,f2))
 print('filename...',fx) 
 f = open(fx,'r')     
@@ -208,7 +208,7 @@ o11 = np.zeros(57)
 for i in range(57):
     o11[i]=91+i   
 
-f2='E0d_-10kT_mu_25kT/frag_nie2_occ_0pxx.txt'
+f2='E0d_-0p18kT_mu_25kT/frag_nie2_occ_0pxx.txt'
 fx=''.join((f1,f2))
 print('filename...',fx)   
 f = open(fx,'r')   
@@ -247,7 +247,7 @@ o11 = np.zeros(57)
 for i in range(57):
     o11[i]=91+i 
 
-f2='E0d_-5kT_mu_-25kT/frag_nie2_occ_0pxx.txt'
+f2='E0d_-0p09kT_mu_-25kT/frag_nie2_occ_0pxx.txt'
 fx=''.join((f1,f2))
 print('filename...',fx)  
 f = open(fx,'r')     
@@ -265,7 +265,7 @@ o11 = np.zeros(57)
 for i in range(57):
     o11[i]=91+i  
 
-f2='E0d_-5kT_mu_-15kT/frag_nie2_occ_0pxx.txt'
+f2='E0d_-0p09kT_mu_-15kT/frag_nie2_occ_0pxx.txt'
 fx=''.join((f1,f2))
 print('filename...',fx)  
 f = open(fx,'r')      
@@ -283,7 +283,7 @@ o11 = np.zeros(57)
 for i in range(57):
     o11[i]=91+i 
 
-f2='E0d_-5kT_mu_-6kT/frag_nie2_occ_0pxx.txt'
+f2='E0d_-0p09kT_mu_-6kT/frag_nie2_occ_0pxx.txt'
 fx=''.join((f1,f2))
 print('filename...',fx)  
 f = open(fx,'r')      
@@ -301,7 +301,7 @@ o11 = np.zeros(57)
 for i in range(57):
     o11[i]=91+i    
     
-f2='E0d_-5kT_mu_-6p46kT/frag_nie2_occ_0pxx.txt'
+f2='E0d_-0p09kT_mu_-6p46kT/frag_nie2_occ_0pxx.txt'
 fx=''.join((f1,f2))
 print('filename...',fx)  
 f = open(fx,'r')  
@@ -319,7 +319,7 @@ o11 = np.zeros(57)
 for i in range(57):
     o11[i]=91+i    
     
-f2='E0d_-5kT_mu_25kT/frag_nie2_occ_0pxx.txt'
+f2='E0d_-0p09kT_mu_25kT/frag_nie2_occ_0pxx.txt'
 fx=''.join((f1,f2))
 print('filename...',fx)  
 f = open(fx,'r')  
@@ -465,7 +465,7 @@ o11 = np.zeros(57)
 for i in range(57):
     o11[i]=91+i    
 
-f2='E0d_5kT_mu_-25kT/frag_nie2_occ_0pxx.txt'
+f2='E0d_0p09kT_mu_-25kT/frag_nie2_occ_0pxx.txt'
 fx=''.join((f1,f2))
 print('filename...',fx)  
 f = open(fx,'r')
@@ -483,7 +483,7 @@ o11 = np.zeros(57)
 for i in range(57):
     o11[i]=91+i  
 
-f2='E0d_5kT_mu_-15kT/frag_nie2_occ_0pxx.txt'
+f2='E0d_0p09kT_mu_-15kT/frag_nie2_occ_0pxx.txt'
 fx=''.join((f1,f2))
 print('filename...',fx)  
 f = open(fx,'r')    
@@ -501,7 +501,7 @@ o11 = np.zeros(57)
 for i in range(57):
     o11[i]=91+i 
 
-f2='E0d_5kT_mu_-6kT/frag_nie2_occ_0pxx.txt'
+f2='E0d_0p09kT_mu_-6kT/frag_nie2_occ_0pxx.txt'
 fx=''.join((f1,f2))
 print('filename...',fx)  
 f = open(fx,'r')    
@@ -519,7 +519,7 @@ o11 = np.zeros(57)
 for i in range(57):
     o11[i]=91+i   
 
-f2='E0d_5kT_mu_25kT/frag_nie2_occ_0pxx.txt'
+f2='E0d_0p09kT_mu_25kT/frag_nie2_occ_0pxx.txt'
 fx=''.join((f1,f2))
 print('filename...',fx)  
 f = open(fx,'r')    
@@ -557,7 +557,7 @@ o11 = np.zeros(57)
 for i in range(57):
     o11[i]=91+i    
     
-f2='E0d_-20kT_mu_25kT/frag_nie2_occ_0pxx.txt'
+f2='E0d_-0p36kT_mu_25kT/frag_nie2_occ_0pxx.txt'
 fx=''.join((f1,f2))
 print('filename...',fx)  
 f = open(fx,'r') 
@@ -575,7 +575,7 @@ o11 = np.zeros(57)
 for i in range(57):
     o11[i]=91+i    
     
-f2='E0d_-10kT_mu_25kT/frag_nie2_occ_0pxx.txt'
+f2='E0d_-0p18kT_mu_25kT/frag_nie2_occ_0pxx.txt'
 fx=''.join((f1,f2))
 print('filename...',fx)  
 f = open(fx,'r') 
@@ -593,7 +593,7 @@ o11 = np.zeros(57)
 for i in range(57):
     o11[i]=91+i   
 
-f2='E0d_-5kT_mu_25kT/frag_nie2_occ_0pxx.txt'
+f2='E0d_-0p09kT_mu_25kT/frag_nie2_occ_0pxx.txt'
 fx=''.join((f1,f2))
 print('filename...',fx)  
 f = open(fx,'r')     
@@ -629,7 +629,7 @@ o11 = np.zeros(57)
 for i in range(57):
     o11[i]=91+i 
 
-f2='E0d_5kT_mu_25kT/frag_nie2_occ_0pxx.txt'
+f2='E0d_0p09kT_mu_25kT/frag_nie2_occ_0pxx.txt'
 fx=''.join((f1,f2))
 print('filename...',fx)  
 f = open(fx,'r')    
