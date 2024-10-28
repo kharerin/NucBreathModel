@@ -73,7 +73,7 @@ To generate figure 5, run:
 ```
 $ python3 fqlkr_fig5.py
 ```
-The data and codes can be found in the sub-directories "E0d_xxkT_mu_yykT" in the directory "lnZ_nondegen/no_nieb_cedric/". Here, $\epsilon_0$=xx, and $\mu$=yy and note that the code uses $\rm{E0d}=-\epsilon_0$.
+The data and codes can be found in the sub-directories "E0d_xxkT_mu_yykT" in the directory "lnZ_nondegen/no_nieb_cedric/". Here, $\epsilon_0$=xx, and $\mu$=yy and note that the code uses $\rm{E0}=-\epsilon_0$.
 
 ## Figure 6
 To generate figure 6, run:
