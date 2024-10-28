@@ -29,7 +29,7 @@ int main() {
            }          
         }
        
-        E0=0.0/(147-91); mu=25.0; CN=exp(mu); Nsim=1;     
+        E0=0.0; mu=25.0; CN=exp(mu); Nsim=1;     
         for(i1=0;i1<Nsim;i1++) {                                                      
            for(i=0;i<L1;i++) {
               for(t=0;t<nuc;t++) { 
