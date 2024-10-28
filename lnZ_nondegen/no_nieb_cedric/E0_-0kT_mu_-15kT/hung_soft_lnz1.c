@@ -29,7 +29,7 @@ int main() {
            }          
         }
        
-        E0=0.0/(147-91); mu=-15.0; CN=exp(mu); Nsim=1;     
+        E0=0.0; mu=-15.0; CN=exp(mu); Nsim=1;     
         for(i1=0;i1<Nsim;i1++) {                                                      
            for(i=0;i<L1;i++) {
               for(t=0;t<nuc;t++) { 
@@ -191,7 +191,7 @@ int main() {
            }
         }
               
-        printf("E0d %lf mu %lf frag[0] %lf frag[56] %lf\n",E0*56,mu,frag[0],frag[56]); 
+        printf("E0 %lf mu %lf frag[0] %lf frag[56] %lf\n",E0,mu,frag[0],frag[56]); 
         fclose(f2); fclose(f10); fclose(f11); return(0); 
 }
 
