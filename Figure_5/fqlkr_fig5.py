@@ -8,7 +8,7 @@ import string
     
 fig, ax = plt.subplots(3,2,figsize=(7,10))
 
-f1='./'
+f1='/lnZ_nondegen/no_nieb_cedric/'
 
 ax2=plt.subplot(3, 2, 1)
 ax2.text(-0.15, 1.05, string.ascii_uppercase[0], transform=ax2.transAxes, size=20, weight='bold')
