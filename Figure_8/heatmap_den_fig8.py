@@ -8,7 +8,7 @@ import string
     
 fig, ax = plt.subplots(3,2,figsize=(7,10))
 
-f1='/media/hungyo/edrive/hung_ens_laptop/hungyo_nucdyn/NucleoModel/lnZ_nondegen/mu_-21p6kt_E0d8p4/nieb2/kevin_fig_ver2/large_remod2/score_scanA1/g_r_lnZ/E0d_e0_amax_amin_hc_a_0/'
+f1='/model_1/g_r_lnZ/E0d_e0_amax_amin_hc_a_0/'
 ax1=plt.subplot(3, 2, 1)
 ax1.text(-0.12, 1.05, string.ascii_uppercase[0], transform=ax1.transAxes, size=20, weight='bold')
 plt.title(r"$\epsilon_0=-0.36$")
