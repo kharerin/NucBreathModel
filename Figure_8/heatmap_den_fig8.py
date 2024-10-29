@@ -8,7 +8,7 @@ import string
     
 fig, ax = plt.subplots(3,2,figsize=(7,10))
 
-f1='/model_1/g_r_lnZ/E0d_e0_amax_amin_hc_a_0/'
+f1='/model_1/g_r_lnZ/E0d_e0_amax_amin_hc_a_0/' # data and codes
 ax1=plt.subplot(3, 2, 1)
 ax1.text(-0.12, 1.05, string.ascii_uppercase[0], transform=ax1.transAxes, size=20, weight='bold')
 plt.title(r"$\epsilon_0=-0.36$")
