@@ -89,3 +89,10 @@ $ python3 heatmap_den_fig7.py
 ```
 Open the python code "heatmap_den_fig7.py" to find the directory paths to the codes. 
 
+## Figure 8
+To generate figure 8, run:
+```
+$ python3 heatmap_den_fig8.py
+```
+Open the python code "heatmap_den_fig8.py" to find the directory paths to the codes. 
+
