@@ -75,24 +75,24 @@ $ python3 fqlkr_fig5.py
 ```
 The data and codes can be found in the sub-directories "E0d_xxkT_mu_yykT" in the directory "lnZ_nondegen/no_nieb_cedric/". Here, $\epsilon_0$=xx, and $\mu$=yy and note that the code uses $\rm{E0}=-\epsilon_0$.
 
-## Figure 6
-To generate figure 6, run:
+## Figure 6, 7, and 8
+Go to each folder for example Figure_6 and run:
 ```
 $ python3 heatmap_equiprob_fig6.py
 ```
-Open the python code "heatmap_equiprob_fig6.py" to find the directory paths to the codes. 
+Data has been pregenerated. Open the python code "heatmap_equiprob_fig6.py" to find the directory paths to the codes. Similarly you can do for **Figure 7** and **Figure 8**. 
 
-## Figure 7
-To generate figure 7, run:
+## Figure 9
+To generate figure 9, run:
 ```
-$ python3 heatmap_den_fig7.py
+$ python3 heatmap_den_fig9.py
 ```
-Open the python code "heatmap_den_fig7.py" to find the directory paths to the codes. 
+Open the python code "heatmap_den_fig8.py" to find the directory paths to the codes. Follow similar steps as in **Figure 3** to generate the data. 
 
-## Figure 8
-To generate figure 8, run:
+## Figure 10
+To generate figure 10, run:
 ```
-$ python3 heatmap_den_fig8.py
+$ python3 Figure_10_mnase200U_fit_heat2.py
 ```
-Open the python code "heatmap_den_fig8.py" to find the directory paths to the codes. 
+Open the python code "Figure_10_mnase200U_fit_heat2.py" to find the directory paths to the codes.  
 
