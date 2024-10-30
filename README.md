@@ -96,3 +96,6 @@ $ python3 Figure_10_mnase200U_fit_heat2.py
 ```
 Open the python code "Figure_10_mnase200U_fit_heat2.py" to find the directory paths to the codes.  
 
+## Note
+If you face error while running the codes please import(include) correct versions of python(C) modules and check the directory paths properly.
+
