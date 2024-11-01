@@ -150,7 +150,7 @@ dg=[]
 data1 = np.zeros( (250, 250) )
 data2 = np.zeros( (250, 250) )
 data3 = np.zeros( (250, 250) )
-f = open('/media/hungyo/edrive/hung_ens_laptop/hungyo_nucdyn/NucleoModel/lnZ_nondegen/no_nieb_tomchou/mu_vs_E0d/mean_dg/d1_mu_E0d.txt','r')
+f = open('/lnZ_nondegen/no_nieb_tomchou/mu_vs_E0d/mean_dg/d1_mu_E0d.txt','r')
 for row in f:
     row = row.split(' ')
     mu2.append(float(row[0]))
@@ -219,7 +219,7 @@ lm=[]
 data1 = np.zeros( (250, 250) )
 data2 = np.zeros( (250, 250) )
 data3 = np.zeros( (250, 250) )
-f = open('/media/hungyo/edrive/hung_ens_laptop/hungyo_nucdyn/NucleoModel/lnZ_nondegen/no_nieb_tomchou/mu_vs_E0d/mean_l/d1_mu_E0d.txt','r')
+f = open('/lnZ_nondegen/no_nieb_tomchou/mu_vs_E0d/mean_l/d1_mu_E0d.txt','r')
 for row in f:
     row = row.split(' ')
     mu2.append(float(row[0]))
@@ -246,7 +246,7 @@ data1 = np.zeros( (6, 575) )
 data4 = np.zeros( (6, 575) )
 data5 = np.zeros( (6, 575) )
 i=0
-f = open('/media/hungyo/edrive/hung_ens_laptop/hungyo_nucdyn/NucleoModel/lnZ_nondegen/no_nieb_tomchou/mu_vs_E0d/mean_dg_vs_mu/d1_mu_E0d.txt','r')
+f = open('/lnZ_nondegen/no_nieb_tomchou/mu_vs_E0d/mean_dg_vs_mu/d1_mu_E0d.txt','r')
 for row in f:
     row = row.split(' ')
     mu2.append(float(row[0]))
@@ -289,7 +289,7 @@ dg=[]
 data1 = np.zeros( (250, 250) )
 data2 = np.zeros( (250, 250) )
 data3 = np.zeros( (250, 250) )
-f = open('/media/hungyo/edrive/hung_ens_laptop/hungyo_nucdyn/NucleoModel/lnZ_nondegen/no_nieb_tomchou/mu_vs_E0d_amin1/mean_dg/d1_mu_E0d.txt','r')
+f = open('/lnZ_nondegen/no_nieb_tomchou/mu_vs_E0d_amin1/mean_dg/d1_mu_E0d.txt','r')
 for row in f:
     row = row.split(' ')
     mu2.append(float(row[0]))
@@ -358,7 +358,7 @@ lm=[]
 data1 = np.zeros( (250, 250) )
 data2 = np.zeros( (250, 250) )
 data3 = np.zeros( (250, 250) )
-f = open('/media/hungyo/edrive/hung_ens_laptop/hungyo_nucdyn/NucleoModel/lnZ_nondegen/no_nieb_tomchou/mu_vs_E0d_amin1/mean_l/d1_mu_E0d.txt','r')
+f = open('/lnZ_nondegen/no_nieb_tomchou/mu_vs_E0d_amin1/mean_l/d1_mu_E0d.txt','r')
 for row in f:
     row = row.split(' ')
     mu2.append(float(row[0]))
@@ -386,7 +386,7 @@ data1 = np.zeros( (6, 575) )
 data4 = np.zeros( (6, 575) )
 data5 = np.zeros( (6, 575) )
 i=0
-f = open('/media/hungyo/edrive/hung_ens_laptop/hungyo_nucdyn/NucleoModel/lnZ_nondegen/no_nieb_tomchou/mu_vs_E0d_amin1/mean_dg_vs_mu/d1_mu_E0d.txt','r')
+f = open('/lnZ_nondegen/no_nieb_tomchou/mu_vs_E0d_amin1/mean_dg_vs_mu/d1_mu_E0d.txt','r')
 for row in f:
     row = row.split(' ')
     mu2.append(float(row[0]))
