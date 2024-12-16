@@ -18,7 +18,7 @@ for i in range(Ns):
     o11[i]=amin+i
 
 f1='/yeastsc_lnZ/H4_Input_MNase_200U_Rep1/'
-f2='frag_91_147bp_gene.dat'
+f2='frag_1_400bp_gene.dat'
 fx=''.join((f1,f2))
 print('filename...',fx)
 f = open(fx,'r')
