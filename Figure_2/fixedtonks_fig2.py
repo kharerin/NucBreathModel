@@ -50,7 +50,7 @@ lm=[]
 data1 = np.zeros( (9, 575) )
 data4 = np.zeros( (9, 575) )
 data5 = np.zeros( (9, 575) )
-f = open('/lnZ_nondegen/model_1/density_fixedsize_vs_mu/den_mu_E0d.txt','r')
+f = open('/media/hungyo/edrive/hung_ens_laptop/hungyo_nucdyn/NucleoModel/lnZ_nondegen/mu_-21p6kt_E0d8p4/nieb2/kevin_fig_ver2/large_remod2/score_scanA1/density_fixedsize_vs_mu/den_mu_E0d.txt','r')
 for row in f:
     row = row.split(' ')
     mu.append(float(row[0]))
@@ -106,7 +106,7 @@ for j in range(9):
            ux.append(ur[i])
            ox.append(o[i])
     if len(ux)>10:
-       plt.plot(ux, ox) #linestyle='dotted'
+       plt.plot(ux, ox,label='%dbp'%int(l[j])) #linestyle='dotted'
        print('j.....',j,cx[j])
 #plt.plot(ux, ox, c='k') #linestyle='dotted' 
 
@@ -120,7 +120,7 @@ plt.plot(mu1, data1[6][:], linestyle='', c = '#e377c2',marker='o',ms=4,markevery
 plt.plot(mu1, data1[7][:], linestyle='', c = '#7f7f7f',marker='o',ms=4,markevery=8)
 plt.plot(mu1, data1[8][:], linestyle='', c = '#bcbd22',marker='o',ms=4,markevery=8)
 #plt.vlines(-2.65, 0, 1, linestyles ="dotted", colors ="k")   
- 
+plt.legend(loc="upper right",bbox_to_anchor=(1.03, 0.85),borderpad=0.25,labelspacing=0.25,fontsize=10,frameon=False) 
 
 mu=[]
 E0=[]
@@ -130,7 +130,7 @@ lm=[]
 ms=[]
 data1 = np.zeros(300)
 data4 = np.zeros(300)
-f = open('/lnZ_nondegen/model_1/density_fixedsize_vs_mu/critical_mu/den_mu_E0d.txt','r')
+f = open('/media/hungyo/edrive/hung_ens_laptop/hungyo_nucdyn/NucleoModel/lnZ_nondegen/mu_-21p6kt_E0d8p4/nieb2/kevin_fig_ver2/large_remod2/score_scanA1/density_fixedsize_vs_mu/critical_mu/den_mu_E0d.txt','r')
 for row in f:
     row = row.split(' ')
     mu.append(float(row[0]))
@@ -149,7 +149,7 @@ mux=np.zeros(7)
 ls = np.zeros(7)
 ls[0]=25; ls[1]=50; ls[2]=75; ls[3]=100; ls[4]=125; ls[5]=150; ls[6]=175; 
 k=0  
-for i in range(7): # collecting fit-points for the scatter plot
+for i in range(7):
     data1 = np.zeros(300)
     data5 = np.zeros(300)
     for j in range(300):
@@ -197,7 +197,7 @@ lm=[]
 ms=[]
 data1 = np.zeros(300)
 data4 = np.zeros(300)
-f = open('/lnZ_nondegen/model_1/density_fixedsize_vs_mu/critical_mu_lk_20/den_mu_E0d.txt','r')
+f = open('/media/hungyo/edrive/hung_ens_laptop/hungyo_nucdyn/NucleoModel/lnZ_nondegen/mu_-21p6kt_E0d8p4/nieb2/kevin_fig_ver2/large_remod2/score_scanA1/density_fixedsize_vs_mu/critical_mu_lk_20/den_mu_E0d.txt','r')
 for row in f:
     row = row.split(' ')
     mu.append(float(row[0]))
@@ -216,7 +216,7 @@ mux=np.zeros(7)
 ls = np.zeros(7)
 ls[0]=25; ls[1]=50; ls[2]=75; ls[3]=100; ls[4]=125; ls[5]=150; ls[6]=175; 
 k=0  
-for i in range(7): # collecting fit-points for the scatter plot
+for i in range(7):
     data1 = np.zeros(300)
     data5 = np.zeros(300)
     for j in range(300):
@@ -258,7 +258,7 @@ for i in range(7): # collecting fit-points for the scatter plot
       
 ax1=plt.subplot(1, 3, 3)
 ax1.text(-0.25, 1.07, string.ascii_uppercase[2], transform=ax1.transAxes, size=20, weight='bold')
-plt.ylabel(r'Critical chemical Pot. ($\mu_r$*)',fontsize=12)
+plt.ylabel(r'Chemical Potential ($\mu_r$*)',fontsize=12)
 plt.xlabel('Wrapping length ($l$)',fontsize=12)
 plt.xlim(0, 200)
 plt.ylim(-8, 2)
