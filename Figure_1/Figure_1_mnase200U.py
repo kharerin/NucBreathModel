@@ -11,13 +11,12 @@ import os
 fig, ax = plt.subplots(2,2,figsize=(9,4.2))
 
 o1=[]; o2=[]; o3=[]; o4=[];
-Ns=57
-amin=91
+Ns=400
 o11 = np.zeros(Ns)
 for i in range(Ns):
-    o11[i]=amin+i
+    o11[i]=1+i
 
-f1='/yeastsc_lnZ/H4_Input_MNase_200U_Rep1/'
+f1='/media/hungyo/edrive/hung_ens_laptop/hungyo_nucdyn/NucleoModel/lnZ_nondegen/yeastsc_lnZ/H4_Input_MNase_200U_Rep1/'
 f2='frag_1_400bp_gene.dat'
 fx=''.join((f1,f2))
 print('filename...',fx)
@@ -27,7 +26,7 @@ for row in f:
     o2.append(float(row[0]))
 f.close()
 
-f2='frag_91_147bp_nong.dat'
+f2='frag_1_400bp_nong.dat'
 fx=''.join((f1,f2))
 print('filename...',fx)
 f = open(fx,'r')
@@ -36,7 +35,7 @@ for row in f:
     o3.append(float(row[0]))
 f.close()
 
-f2='frag_91_147bp.dat'
+f2='frag_1_400bp.dat'
 fx=''.join((f1,f2))
 print('filename...',fx)
 f = open(fx,'r')
@@ -50,20 +49,22 @@ ax2.text(-0.18, 1.03, string.ascii_uppercase[0], transform=ax2.transAxes, size=2
 #plt.title("Non-degenerate")
 plt.xlabel('Fragment length (bp)',fontsize=12)
 plt.ylabel('Frequency',fontsize=13)
-plt.axis([amin, 147, 0, 0.1])
+plt.axis([80, 180, 0, 0.03])
 #plt.yscale("log")
 
 
-plt.plot(o11, o1, c = 'k')
-plt.plot(o11, o2, c = 'm')
-plt.plot(o11, o3, c = 'c')
+plt.plot(o11, o1, c = 'k',label='All')
+plt.plot(o11, o2, c = 'm',label='Gene')
+plt.plot(o11, o3, c = 'c',label='Non-gene')
 #plt.plot(o11, o4, c = 'r')
+plt.vlines(91, 0, 0.03,linestyles ="dotted", colors ="k")
+plt.vlines(147, 0, 0.03, linestyles ="dotted", colors ="k")
 
-plt.legend(('All', 'Gene', 'Non-gene')) #200U
-plt.grid()
+plt.legend(loc="upper left",borderpad=0.25,labelspacing=0.25,fontsize=10,framealpha=1.0) #200U
+#plt.grid()
 
 
-data3=np.load('/yeastsc_lnZ/H4_Input_MNase_200U_Rep1/pair_end/chrmap.npy')
+data3=np.load('./yeastsc_lnZ/H4_Input_MNase_200U_Rep1/pair_end/chrmap.npy')
 s=data3.shape
 print(s)
 s=data3.sum()
@@ -79,12 +80,15 @@ ax4.text(-0.14, 1.06, string.ascii_uppercase[1], transform=ax4.transAxes, size=2
 #plt.xlabel('DNA (kbp)',fontsize=11)
 plt.ylabel('Size (bp)',fontsize=12)
 plt.xticks(np.arange(0, 2.01, 0.5))
-plt.yticks(np.arange(90, 147, 10)) 
+plt.yticks(np.arange(90, 148, 10)) 
 plt.xlim(0, 2)
 plt.ylim(91,147)
 imx1=plt.imshow(data5,extent=[0,2,91,147], vmin=data5.min(), vmax=data5.max(), cmap='jet',aspect=0.015);
+
 cax = ax4.inset_axes([1.03, 0.3, 0.02, 0.5])
 cb=plt.colorbar(imx1,cax,shrink=0.4)
+#cb=plt.colorbar(imx1,cax,ticks=[0, 0.005,0.01],shrink=0.4)
+#cb.ax.set_yticklabels(['0', '0.005', '0.01'])  # vertically oriented colorbar
 #plt.setp(ax4.get_xticklabels(), visible=False)
 print(data5.max())
 print(data5.min())
@@ -106,7 +110,7 @@ plt.xlabel('DNA (kbp)',fontsize=12)
 plt.ylabel('Density',fontsize=12)
 
 plt.xticks(np.arange(0, 2.01, 0.5))
-plt.yticks(np.arange(0, 0.126, 0.025))
+plt.yticks(np.arange(0, 0.26, 0.025))
 plt.ylim(0,0.125)
 plt.xlim(0, 2)
 #plt.yscale("log")
