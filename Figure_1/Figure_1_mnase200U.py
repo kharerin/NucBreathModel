@@ -16,7 +16,7 @@ o11 = np.zeros(Ns)
 for i in range(Ns):
     o11[i]=1+i
 
-f1='/media/hungyo/edrive/hung_ens_laptop/hungyo_nucdyn/NucleoModel/lnZ_nondegen/yeastsc_lnZ/H4_Input_MNase_200U_Rep1/'
+f1='/yeastsc_lnZ/H4_Input_MNase_200U_Rep1/'
 f2='frag_1_400bp_gene.dat'
 fx=''.join((f1,f2))
 print('filename...',fx)
